@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sample Files Download</title>
+
+  <!-- Optional: clean system font stack -->
+  <style>
+    :root{
+      --bg: #f7fafc;
+      --card: #ffffff;
+      --accent: #0f172a;
+      --muted: #52606d;
+    }
+
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, var(--bg), #ffffff 60%);
+      color: var(--accent);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    /* page container */
+    .page {
+      min-height:100%;
+      display:flex;
+      align-items:flex-start;        /* align toward top, not centered vertically */
+      justify-content:center;       /* center horizontally the content block */
+      padding:48px 20px;
+      box-sizing:border-box;
+    }
+
+    /* content card */
+    .card {
+      width:100%;
+      max-width:900px;
+      background:var(--card);
+      border-radius:12px;
+      padding:32px 36px;
+      box-shadow: 0 8px 30px rgba(16,24,40,0.06);
+      box-sizing:border-box;
+      /* make text left-aligned explicitly (not centered) */
+      text-align:left;
+    }
+
+    h1{
+      margin:0 0 12px 0;
+      font-size:clamp(1.6rem, 2.6vw, 2.2rem); /* responsive */
+      line-height:1.1;
+      letter-spacing:-0.02em;
+      color:var(--accent);
+    }
+
+    .subtitle {
+      margin:0;
+      font-size:1rem;
+      color:var(--muted);
+      line-height:1.6;
+    }
+
+    /* small helper - align the heading/p block to the left edge of the card */
+    .meta {
+      display:block;
+      margin-left:0;
+    }
+
+    /* optional nice left border accent */
+    .accent {
+      display:inline-block;
+      width:6px;
+      height:48px;
+      background:linear-gradient(180deg,#4f46e5,#06b6d4);
+      border-radius:4px;
+      vertical-align:middle;
+      margin-right:14px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width:480px){
+      .card{ padding:20px; border-radius:10px; }
+      h1{ font-size:1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page" role="main">
+    <article class="card" aria-labelledby="page-title">
+      <div style="display:flex; align-items:center;">
+        <span class="accent" aria-hidden="true"></span>
+        <h1 id="page-title">Sample Files Download</h1>
+      </div>
+
+      <p class="subtitle">
+        If you need example / dummy files for testing or demo and presentation purpose, this is a great place for you.
+      </p>
+    </article>
+  </main>
+</body>
+</html>
